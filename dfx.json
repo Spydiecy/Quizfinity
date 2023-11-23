@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "icp_first_program_backend": {
+      "main": "src/icp_first_program_backend/main.mo",
+      "type": "motoko"
+    },
+    "icp_first_program_frontend": {
+      "dependencies": [
+        "icp_first_program_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/icp_first_program_frontend/src/index.html"
+      },
+      "source": [
+        "src/icp_first_program_frontend/assets",
+        "dist/icp_first_program_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
