@@ -10,7 +10,7 @@ Quizfinity is a decentralized quiz application (dApp) deployed on the Internet C
 ## Installation
 1. Clone the repository:
 ```
-https://github.com/Spydiecy/Quizfinity.git
+git clone https://github.com/Spydiecy/Quizfinity.git
 ```
 
 2. Change Directory:
