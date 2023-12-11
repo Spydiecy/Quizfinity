@@ -8,6 +8,8 @@ import { PushAnswer } from '../hooks/setResult';
 import { useSelector, useDispatch } from 'react-redux'
 import { Navigate } from 'react-router-dom'
 
+import quizfinityLogo from '../../../icp_first_program_frontend/assets/quizfinity_transparent.png';
+
 export default function Quiz() {
 
     const [check, setChecked] = useState(undefined)
@@ -52,7 +54,7 @@ export default function Quiz() {
 
   return (
     <div className='container'>
-        <h1 className='title text-light'>Quiz Application</h1>
+        <h1 className='title text-light'><img src={quizfinityLogo} className='logo' />Quizfinity</h1>
 
         {/* display questions */}
         <Questions onChecked={onChecked} />

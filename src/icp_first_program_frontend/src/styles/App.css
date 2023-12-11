@@ -8,7 +8,8 @@
 
 body, html{
   height: 100%;
-  background: var(--dark-color)
+  background: var(--dark-color);
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
 }
 
 * > *{
@@ -18,10 +19,10 @@ body, html{
 .container{
   display: block;
   position: relative;
-  margin: 40px auto;
+  margin: -25px auto;
   height: auto;
   width: 800px;
-  padding: 20px;
+  padding: 15px;
 }
 
 .container .title{

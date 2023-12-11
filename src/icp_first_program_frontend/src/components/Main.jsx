@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { setUserId } from '../redux/result_reducer'
 import '../styles/Main.css'
+import quizfinityLogo from '../../../icp_first_program_frontend/assets/quizfinity_transparent.png';
 
 export default function Main() {
 
@@ -19,14 +20,14 @@ export default function Main() {
 
   return (
     <div className='container'>
-        <h1 className='title text-light'>Quiz Application</h1>
+        <h1 className='title text-light'><img src={quizfinityLogo} className='logo' />Quizfinity</h1>
 
         <ol>
-            <li>You will be asked 10 questions one after another.</li>
-            <li>10 points is awarded for the correct answer.</li>
-            <li>Each question has three options. You can choose only one options.</li>
-            <li>You can review and change answers before the quiz finish.</li>
-            <li>The result will be declared at the end of the quiz.</li>
+            <li>Get ready for a quest of wit and wisdom with 10 consecutive questions!</li>
+            <li>Score a perfect 10 by nailing each correct answer - 10 points for every victory!</li>
+            <li>Choose wisely! Each question boasts three options; pick the one that sparks joy.</li>
+            <li>It's not set in stone! Feel free to tweak your answers before the quiz curtain falls.</li>
+            <li>Drumroll, please! The moment of truth arrives at the grand finale - results reveal all the glory!</li>
         </ol>
 
         <form id="form">
@@ -34,7 +35,7 @@ export default function Main() {
         </form>
 
         <div className='start'>
-            <Link className='btn' to={'quiz'} onClick={startQuiz}>Start Quiz</Link>
+            <Link className='btn' to={'quiz'} onClick={startQuiz}>Let's Begin</Link>
         </div>
 
     </div>

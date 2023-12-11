@@ -9,7 +9,7 @@ import { attempts_Number, earnPoints_Number, flagResult } from '../helper/helper
 import { resetAllAction } from '../redux/question_reducer';
 import { resetResultAction } from '../redux/result_reducer';
 
-
+import quizfinityLogo from '../../../icp_first_program_frontend/assets/quizfinity_transparent.png';
 
 export default function Result() {
 
@@ -31,12 +31,16 @@ export default function Result() {
 
   return (
     <div className='container'>
-        <h1 className='title text-light'>Quiz Application</h1>
+        <h1 className='title text-light'><img src={quizfinityLogo} className='logo' />Quizfinity</h1>
 
         <div className='result flex-center'>
             <div className='flex'>
                 <span>Username</span>
                 <span className='bold'>{userId || ""}</span>
+            </div>
+            <div className='flex'>
+                <span>Total Points Earned : </span>
+                <span className='bold'>{earnPoints || 0}</span>
             </div>
             <div className='flex'>
                 <span>Total Quiz Points : </span>
@@ -45,14 +49,6 @@ export default function Result() {
             <div className='flex'>
                 <span>Total Questions : </span>
                 <span className='bold'>{ queue.length || 0}</span>
-            </div>
-            <div className='flex'>
-                <span>Total Attempts : </span>
-                <span className='bold'>{attempts || 0}</span>
-            </div>
-            <div className='flex'>
-                <span>Total Earn Points : </span>
-                <span className='bold'>{earnPoints || 0}</span>
             </div>
             <div className='flex'>
                 <span>Quiz Result</span>
