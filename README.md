@@ -2,6 +2,8 @@
 
 Quizfinity is a decentralized quiz application (dApp) deployed on the Internet Computer Protocol (ICP) blockchain. It offers a unique quizzing experience with full transparency and fairness.
 
+![quizfinity](https://github.com/Spydiecy/Quizfinity/assets/100078125/4bfc6d03-86d4-4f8a-beaa-2cbed06c9c7d)
+
 ## Features
 - **Decentralized**: Quizfinity is built on the ICP blockchain, ensuring full transparency and security.
 - **Fairness**: The results are verifiable and cannot be manipulated thanks to the immutable nature of the blockchain.
